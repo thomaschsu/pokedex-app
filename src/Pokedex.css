@@ -1,14 +1,65 @@
 .Pokedex {
     text-align: center;
 }
+
 .Pokedex-cards {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
+
 .Pokedex-winner {
     color: #4caf50;
+    animation: winner 4s infinite;
+    animation-timing-function: ease;
 }
+
 .Pokedex-loser {
     color: #e91e63;
+    animation: loser 10s infinite;
+    animation-timing-function: ease;
+}
+
+@keyframes winner {
+    0% {
+        color: #4caf50;
+    }
+
+    25% {
+        color: #4d4d4d;
+    }
+
+    50% {
+        color: #4caf50;
+    }
+
+    75% {
+        color: #4d4d4d;
+    }
+
+    100% {
+        color: #4caf50;
+    }
+}
+
+@keyframes loser {
+    0% {
+        color: #e91e63;
+    }
+
+    25% {
+        color: #4d4d4d;
+    }
+
+    50% {
+        color: #e91e63;
+    }
+
+    75% {
+        color: #4d4d4d;
+    }
+
+    100% {
+        color: #e91e63;
+    }
 }
